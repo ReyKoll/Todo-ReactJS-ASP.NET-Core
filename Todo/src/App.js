@@ -55,7 +55,7 @@ const App = () => {
         body: JSON.stringify(isUpdatedTodo)
       })
 
-      setTodos(todos.map((todo) => todo._id === id ? isUpdatedTodo : fetchTodosAPI))
+      setTodos(todos.map((todo) => todo._id === id ? isUpdatedTodo : todo))
     }
 
     return (
